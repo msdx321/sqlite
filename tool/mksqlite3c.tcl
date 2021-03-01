@@ -333,6 +333,7 @@ foreach file {
 
    os_unix.c
    os_win.c
+   os_composite.c
    memdb.c
 
    bitvec.c

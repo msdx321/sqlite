@@ -67,7 +67,7 @@ LIBOBJ+= vdbe.o parse.o \
          main.o malloc.o mem0.o mem1.o mem2.o mem3.o mem5.o \
          memdb.o memjournal.o \
          mutex.o mutex_noop.o mutex_unix.o mutex_w32.o \
-         notify.o opcodes.o os.o os_unix.o os_win.o \
+         notify.o opcodes.o os.o os_unix.o os_win.o os_composite.o \
          pager.o pcache.o pcache1.o pragma.o prepare.o printf.o \
          random.o resolve.o rowset.o rtree.o \
          select.o sqlite3rbu.o status.o stmt.o \
@@ -135,6 +135,7 @@ SRC = \
   $(TOP)/src/os_unix.c \
   $(TOP)/src/os_win.c \
   $(TOP)/src/os_win.h \
+  $(TOP)/src/os_composite.c \
   $(TOP)/src/pager.c \
   $(TOP)/src/pager.h \
   $(TOP)/src/parse.y \
